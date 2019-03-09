@@ -7,6 +7,7 @@ import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
+import { statuses, streets } from "../../constants/Constants";
 
 const styles = theme => ({
   root: {
@@ -24,72 +25,26 @@ const styles = theme => ({
   }
 });
 
-const statuses = [
-  {
-    id: 'wet',
-    name: 'Wet'
-  },
-  {
-    id: 'slippery',
-    name: 'Wet'
-  },
-  {
-    id: 'icy',
-    name: 'Icy'
-  },
-  {
-    id: 'wet',
-    name: 'Wet'
-  },
-  {
-    id: 'wet',
-    name: 'Wet'
-  },
-];
-
-const streets = [
-  {
-    id: "190-albany-road",
-    name: "190 Albany Road"
-  },
-  {
-    id: "accolade-east",
-    name: "Accolade East"
-  },
-  {
-    id: "accolade-west",
-    name: "Accolade West"
-  },
-  {
-    id: "atkinson",
-    name: "Atkinson"
-  },
-  {
-    id: "behavioral-science",
-    name: "Behavioral Science"
-  }
-];
-
 function Heatmap({ classes }) {
   return (
     <Paper className={classes.root}>
       <Table className={classes.table}>
         <TableHead>
-          {statuses.map(status => {
-            return (
-              <TableRow>
-                <TableCell>
-                  {status.name}
-                </TableCell>
-              </TableRow>
-            )
-          })}
+          <TableRow>
+            {statuses.map(status => {
+              return <TableCell>{status.name}</TableCell>;
+            })}
+          </TableRow>
         </TableHead>
         <TableBody>
           {streets.map(street => {
             return (
               <TableRow>
                 <TableCell>{street.name}</TableCell>
+                <TableCell/>
+                <TableCell/>
+                <TableCell/>
+                <TableCell/>
               </TableRow>
             );
           })}

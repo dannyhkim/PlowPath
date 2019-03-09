@@ -92,7 +92,7 @@ function Header({classes, open, setOpen}) {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" color="inherit" noWrap>
-          Mini variant drawer
+          HeatMap
         </Typography>
       </Toolbar>
     </AppBar>
