@@ -31,16 +31,18 @@ function Heatmap({ classes }) {
       <Table className={classes.table}>
         <TableHead>
           <TableRow>
+            <TableCell>Street Names</TableCell>
             {statuses.map(status => {
-              return <TableCell>{status.name}</TableCell>;
+              return <TableCell key={status.id}>{status.name}</TableCell>;
             })}
           </TableRow>
         </TableHead>
         <TableBody>
           {streets.map(street => {
             return (
-              <TableRow>
+              <TableRow key={street.id}>
                 <TableCell>{street.name}</TableCell>
+                <TableCell/>
                 <TableCell/>
                 <TableCell/>
                 <TableCell/>
