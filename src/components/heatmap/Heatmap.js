@@ -1,5 +1,4 @@
 import React from "react";
-import classNames from "classnames";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
@@ -30,7 +29,7 @@ const styles = theme => ({
 const HeatmapCell = ({ classes }) => (
   <TableCell
     className={classes.heatmap}
-    style={{ backgroundColor: heatmapColors[getRandomInt(3)] }}
+    style={{ backgroundColor: heatmapColors[getRandomInt(heatmapColors.length)] }}
   />
 );
 

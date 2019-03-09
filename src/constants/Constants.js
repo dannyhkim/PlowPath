@@ -48,4 +48,4 @@ export const heatmapColors = [
   "#ef9a9a",
   "#fff59d",
   "#a5d6a7"
-]
+];
