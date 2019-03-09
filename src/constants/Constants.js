@@ -5,7 +5,7 @@ export const statuses = [
   },
   {
     id: 'slippery',
-    name: 'Wet'
+    name: 'Slippery'
   },
   {
     id: 'icy',

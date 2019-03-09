@@ -16,7 +16,7 @@ const styles = theme => ({
   }
 });
 
-function App({ classes }) {
+export function App({ classes }) {
   const [open, setOpen] = useState(false);
   return (
     <div className={classes.root}>
