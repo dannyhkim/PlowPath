@@ -81,7 +81,7 @@ function Header({ classes, open, setOpen }) {
         [classes.appBarShift]: open
       })}
     >
-      <Toolbar disableGutters={!open}>
+      <Toolbar disableGutters={!open} style={{ backgroundColor:'#4da6ff', filter:'none'}}>
         <IconButton
           color="inherit"
           aria-label="Open drawer"
