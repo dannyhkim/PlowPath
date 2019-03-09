@@ -1,5 +1,4 @@
 import React from "react";
-import Typography from "../drawer/Drawer";
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({

@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
+
 import "./App.css";
 import Header from "./header/Header";
 import Drawer from "./drawer/Drawer";
 import Heatmap from "./heatmap/Heatmap";
 import Maps from "./maps/Maps";
 import Content from "./content/Content";
+
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
@@ -26,5 +29,9 @@ function App({ classes }) {
     </div>
   );
 }
+
+App.propTypes = {
+  classes: PropTypes.object
+};
 
 export default withStyles(styles)(App);

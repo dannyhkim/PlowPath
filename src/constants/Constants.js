@@ -12,12 +12,12 @@ export const statuses = [
     name: 'Icy'
   },
   {
-    id: 'wet',
-    name: 'Wet'
+    id: 'dirty',
+    name: 'Dirty'
   },
   {
-    id: 'wet',
-    name: 'Wet'
+    id: 'blocked',
+    name: 'Blocked'
   },
 ];
 
