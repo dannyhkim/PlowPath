@@ -8,8 +8,8 @@ import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
-import { statuses, streets } from "../../constants/Constants";
-import {getRandomInt} from '../utils/utils'
+import { statuses, streets, heatmapColors } from "../../constants/Constants";
+import { getRandomInt } from "../utils/utils";
 
 const styles = theme => ({
   root: {
@@ -25,21 +25,16 @@ const styles = theme => ({
       backgroundColor: theme.palette.background.default
     }
   },
-  cell1: {
-    backgroundColor: "red"
-  },
-  cell2: {
-    backgroundColor: "yellow"
-  }
 });
 
-const colors = [
-  "#ef9a9a",
-  "#fff59d",
-  "#a5d6a7"
-];
+const HeatmapCell = ({ classes }) => (
+  <TableCell
+    className={classes.heatmap}
+    style={{ backgroundColor: heatmapColors[getRandomInt(3)] }}
+  />
+);
 
-function Heatmap({ classes }) {
+export const Heatmap = ({ classes }) => {
   return (
     <Paper className={classes.root}>
       <Table className={classes.table}>
@@ -52,25 +47,15 @@ function Heatmap({ classes }) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {streets.map((street, index) => {
+          {streets.map(street => {
             return (
               <TableRow key={street.id}>
                 <TableCell>{street.name}</TableCell>
-                <TableCell
-                  style={{ backgroundColor: colors[getRandomInt(3)]}}
-                />
-                <TableCell
-                  style={{ backgroundColor: colors[getRandomInt(3)]}}
-                />
-                <TableCell
-                  style={{ backgroundColor: colors[getRandomInt(3)]}}
-                />
-                <TableCell
-                  style={{ backgroundColor: colors[getRandomInt(3)]}}
-                />
-                <TableCell
-                  style={{ backgroundColor: colors[getRandomInt(3)]}}
-                />
+                <HeatmapCell classes={classes} />
+                <HeatmapCell classes={classes} />
+                <HeatmapCell classes={classes} />
+                <HeatmapCell classes={classes} />
+                <HeatmapCell classes={classes} />
               </TableRow>
             );
           })}
@@ -78,7 +63,7 @@ function Heatmap({ classes }) {
       </Table>
     </Paper>
   );
-}
+};
 
 Heatmap.propTypes = {
   classes: PropTypes.object

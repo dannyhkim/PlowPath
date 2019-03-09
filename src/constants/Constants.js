@@ -43,3 +43,9 @@ export const streets = [
     name: "Behavioral Science"
   }
 ];
+
+export const heatmapColors = [
+  "#ef9a9a",
+  "#fff59d",
+  "#a5d6a7"
+]
