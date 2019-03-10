@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
@@ -9,6 +9,7 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import { statuses, streets, heatmapColors } from "../../constants/Constants";
 import { getRandomInt } from "../utils/utils";
+import HeatmapDialog from "./HeatmapDialog";
 
 const styles = theme => ({
   root: {
@@ -26,16 +27,20 @@ const styles = theme => ({
   }
 });
 
-const HeatmapCell = ({ classes }) => (
-  <TableCell
-    className={classes.heatMap}
-    style={{
-      backgroundColor: heatmapColors[getRandomInt(heatmapColors.length)]
-    }}
-  />
-);
+const HeatmapCell = ({ classes, setOpen, open }) => {
+  return (
+    <TableCell
+      className={classes.heatMap}
+      onClick={() => setOpen(!open)}
+      style={{
+        backgroundColor: heatmapColors[getRandomInt(heatmapColors.length)]
+      }}
+    />
+  );
+};
 
-export const Heatmap = ({ classes }) => {
+const Heatmap = ({ classes }) => {
+  const [open, setOpen] = useState(false);
   return (
     <Paper className={classes.root}>
       <Table className={classes.table}>
@@ -52,16 +57,21 @@ export const Heatmap = ({ classes }) => {
             return (
               <TableRow key={street.id}>
                 <TableCell>{street.name}</TableCell>
-                <HeatmapCell classes={classes} />
-                <HeatmapCell classes={classes} />
-                <HeatmapCell classes={classes} />
-                <HeatmapCell classes={classes} />
-                <HeatmapCell classes={classes} />
+                {statuses.map((status, index) => {
+                  return (
+                    <HeatmapCell
+                      key={index}
+                      classes={classes}
+                      setOpen={setOpen}
+                    />
+                  );
+                })}
               </TableRow>
             );
           })}
         </TableBody>
       </Table>
+      {open && <HeatmapDialog open={open} setOpen={setOpen} />}
     </Paper>
   );
 };
