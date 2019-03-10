@@ -50,4 +50,4 @@ export const heatmapColors = [
   "#a5d6a7"
 ];
 
-export const MAPS_API = process.env.NODE_ENV === 'development' ? 'AIzaSyCSADzU27ECqdVyrlvpVf2jsV5OaZMYr78' : process.env.REACT_APP_MAP_KEY;
+export const MAPS_API = process.env.REACT_APP_MAP_KEY;
