@@ -1,7 +1,7 @@
 export const statuses = [
   {
-    id: "wet",
-    name: "Wet"
+    id: "status",
+    name: "Status"
   },
   {
     id: "slippery",
@@ -12,8 +12,8 @@ export const statuses = [
     name: "Icy"
   },
   {
-    id: "dirty",
-    name: "Dirty"
+    id: "snowy",
+    name: "Snowy"
   },
   {
     id: "blocked",
