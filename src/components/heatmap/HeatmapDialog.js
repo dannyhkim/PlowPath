@@ -27,7 +27,10 @@ const ResponsiveDialog = ({ fullScreen, open, setOpen }) => {
           {"Dispatch crew to street?"}
         </DialogTitle>
         <DialogContent>
-          <DialogContentText>This will send a notification to the dispatch crew to inspect the selected street</DialogContentText>
+          <DialogContentText>
+            This will send a notification to the dispatch crew to inspect the
+            selected street
+          </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
