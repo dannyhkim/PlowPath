@@ -15,10 +15,23 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
-import PlaceIcon from "@material-ui/icons/Place";
-import TerrainIcon from "@material-ui/icons/Terrain";
+import NewsIcon from "@material-ui/icons/LibraryBooks";
+import MapIcon from "@material-ui/icons/Map";
+import LocationsIcon from "@material-ui/icons/Place";
+import DarkModeIcon from "@material-ui/icons/SettingsBrightness";
 
 const drawerWidth = 240;
+
+const icons = [
+  {
+    id: 'Map',
+    icon: LocationsIcon
+  },
+  {
+    id: 'Map',
+    icon: LocationsIcon
+  }
+]
 
 const styles = theme => ({
   appBar: {
@@ -108,18 +121,28 @@ function MiniDrawer({ open, setOpen, classes, theme }) {
             )}
           </IconButton>
         </div>
-        <Divider />
+        <Divider/>
         <List>
-          {["News", "Map", "Locations", "Dark Mode"].map((text, index) => (
+          {["News"].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
+            <ListItemIcon>
+            {index === 0 ? <NewsIcon/>: <NewsIcon/>}
+            </ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
           ))}
         </List>
-        <Divider />
+        <List>
+          {["News", "Map", "Location", "Dark Mode"].map((text, index) => (
+            <ListItem button key={text}>
+            <ListItemIcon>
+            {}
+            </ListItemIcon>
+            <ListItemText primary={text} />
+          </ListItem>
+          ))}
+        </List>
+        <Divider/>
         <List>
           {["User", "Settings", "Spam"].map((text, index) => (
             <ListItem button key={text}>
