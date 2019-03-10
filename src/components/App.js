@@ -21,11 +21,11 @@ const styles = theme => ({
 const App = ({ classes, backgroundColor }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={classes.root} style={{ backgroundColor: backgroundColor}}>
+    <div className={classes.root} style={{ backgroundColor}}>
       <Header open={open} setOpen={setOpen} />
       <Drawer open={open} setOpen={setOpen} />
       <Content>
-        <Intro open={open} setOpen={setOpen} />
+        <Intro />
         <Heatmap open={open} setOpen={setOpen} />
         <Maps open={open} setOpen={setOpen} />
       </Content>
