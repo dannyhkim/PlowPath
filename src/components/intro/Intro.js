@@ -47,10 +47,18 @@ const styles = theme => ({
     paddingTop: "60px"
   },
   legendimg: {
-      width: "70px",
-      display: "inline",
+      width: "80px",
+      display: "inline-flex",
       paddingTop: "20px",
-      paddingRight: "10px"
+      paddingRight: "40px"
+  },
+  legendsmall: {
+      color: theme.palette.common.white,
+      fontFamily: "Avenir",
+      fontSize: "15px",
+      fontWeight: "bold",
+      display: "inline",
+      paddingRight: "25px"
   }
 });
 
@@ -65,9 +73,20 @@ const Intro = ({ classes }) => {
       <Typography className={classes.legendtext}>
           Legend
       </Typography>
+      <div className={classes.root}>
       <img className={classes.legendimg} src={green} alt=""/>
       <img className={classes.legendimg} src={yellow} alt=""/>
       <img className={classes.legendimg} src={red} alt=""/>
+      </div>
+      <Typography className={classes.legendsmall}>
+        Clear
+      </Typography>
+      <Typography className={classes.legendsmall}>
+        Caution
+      </Typography>
+      <Typography className={classes.legendsmall}>
+        Dangerous
+      </Typography>
     </div>
   );
 };
