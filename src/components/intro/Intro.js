@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import plowimage from "./plowimage.png";
-import green from "./green.png";
-import yellow from "./yellow.png";
-import red from "./red.png";
+import plowimage from "./images/plowimage.png";
+import green from "./images/green.png";
+import yellow from "./images/yellow.png";
+import red from "./images/red.png";
 
 import { Typography } from "@material-ui/core";
 import { withStyles } from "@material-ui/core";
