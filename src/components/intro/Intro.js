@@ -1,6 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import plowimage from "./plowimage.png";
+import green from "./green.png";
+import yellow from "./yellow.png";
+import red from "./red.png";
 
 import { Typography } from "@material-ui/core";
 import { withStyles } from "@material-ui/core";
@@ -29,12 +32,25 @@ const styles = theme => ({
     fontWeight: "bold",
     fontFamily: "Avenir",
     paddingTop: "60px",
-    paddingBottom: "50px"
+  },
+  legendtext: {
+    color: theme.palette.common.white,
+    display: "block",
+    fontSize: "25px",
+    fontWeight: "bold",
+    fontFamily: "Avenir",
+    paddingTop: "60px",
   },
   img: {
     width: "600px",
     display: "inline-flex",
     paddingTop: "60px"
+  },
+  legendimg: {
+      width: "70px",
+      display: "inline",
+      paddingTop: "20px",
+      paddingRight: "10px"
   }
 });
 
@@ -46,6 +62,12 @@ const Intro = ({ classes }) => {
       <Typography className={classes.text2}>
         Make sure there's a safe route for you.
       </Typography>
+      <Typography className={classes.legendtext}>
+          Legend
+      </Typography>
+      <img className={classes.legendimg} src={green} alt=""/>
+      <img className={classes.legendimg} src={yellow} alt=""/>
+      <img className={classes.legendimg} src={red} alt=""/>
     </div>
   );
 };
