@@ -29,7 +29,14 @@ const styles = theme => ({
     fontWeight: "bold",
     fontFamily: "Avenir",
     paddingTop: "60px",
-    paddingBottom: "50px"
+  },
+  legendtext: {
+    color: theme.palette.common.white,
+    display: "block",
+    fontSize: "25px",
+    fontWeight: "bold",
+    fontFamily: "Avenir",
+    paddingTop: "60px",
   },
   img: {
     width: "600px",
@@ -45,6 +52,9 @@ const Intro = ({ classes }) => {
       <img className={classes.img} src={plowimage} alt="" />
       <Typography className={classes.text2}>
         Make sure there's a safe route for you.
+      </Typography>
+      <Typography className={classes.legendtext}>
+          Legend
       </Typography>
     </div>
   );
