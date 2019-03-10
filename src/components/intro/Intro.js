@@ -59,6 +59,15 @@ const styles = theme => ({
       fontWeight: "bold",
       display: "inline",
       paddingRight: "25px"
+  },
+  legendsmall2: {
+    color: theme.palette.common.white,
+    fontFamily: "Avenir",
+    fontSize: "15px",
+    fontWeight: "bold",
+    display: "inline",
+    paddingRight: "30px",
+    paddingLeft: "10px"
   }
 });
 
@@ -78,7 +87,7 @@ const Intro = ({ classes }) => {
       <img className={classes.legendimg} src={yellow} alt=""/>
       <img className={classes.legendimg} src={red} alt=""/>
       </div>
-      <Typography className={classes.legendsmall}>
+      <Typography className={classes.legendsmall2}>
         Clear
       </Typography>
       <Typography className={classes.legendsmall}>
