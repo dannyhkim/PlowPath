@@ -8,12 +8,17 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { withStyles } from "@material-ui/core/styles";
+import Button from '@material-ui/core/Button';
 
 const drawerWidth = 240;
 
 const styles = theme => ({
   root: {
-    display: "flex"
+    display: "flex",
+    flexGrow: 1,
+  },
+  grow: {
+    flexGrow: 1,
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
@@ -32,7 +37,7 @@ const styles = theme => ({
   },
   menuButton: {
     marginLeft: 12,
-    marginRight: 36
+    marginRight: 36,
   },
   hide: {
     display: "none"
@@ -81,7 +86,7 @@ function Header({ classes, open, setOpen }) {
         [classes.appBarShift]: open
       })}
     >
-      <Toolbar disableGutters={!open} style={{ backgroundColor:'#4da6ff', filter:'none'}}>
+      <Toolbar disableGutters={!open} style={{ backgroundColor:'#4da6ff'}}>
         <IconButton
           color="inherit"
           aria-label="Open drawer"
@@ -92,16 +97,18 @@ function Header({ classes, open, setOpen }) {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" color="inherit" noWrap>
+        <Typography variant="h6" color="inherit" className={classes.grow} noWrap>
           PlowPath
         </Typography>
-      </Toolbar>
-    </AppBar>
+        <Button color="inherit">HEAT MAP</Button>
+        <Button color="inherit">YORK U MAP</Button>
+      <Toolbar/>
+    <AppBar/>
   );
 }
 
 Header.propTypes = {
-  classes: PropTypes.object,
+  classes: PropTypes.object.isRequired,
   open: PropTypes.bool,
   setOpen: PropTypes.func
 };
