@@ -4,6 +4,7 @@ import plowimage from "./plowimage.png";
 
 import { Typography } from "@material-ui/core";
 import { withStyles } from "@material-ui/core";
+import { RSA_NO_PADDING } from "constants";
 
 const styles = theme => ({
   root: {
@@ -18,17 +19,23 @@ const styles = theme => ({
     color: theme.palette.common.white,
     display: "inline-flex",
     fontSize: "100px",
-    fontFamily: "Avenir"
+    fontWeight: "bold",
+    fontFamily: "Avenir",
+    paddingTop: "50px"
   },
   text2: {
     color: theme.palette.common.white,
     display: "inline-flex",
     fontSize: "32px",
-    fontFamily: "Avenir"
+    fontWeight: "bold",
+    fontFamily: "Avenir",
+    paddingTop: "60px",
+    paddingBottom: "50px"
   },
   img: {
     width: "600px",
-    display: "inline-flex"
+    display: "inline-flex",
+    paddingTop: "60px"
   }
 });
 
