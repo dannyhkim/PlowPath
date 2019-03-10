@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 import "./App.css";
-import Intro from "./intro/Intro"
+import { Intro } from "./intro/Intro";
 import Header from "./header/Header";
 import Drawer from "./drawer/Drawer";
 import Heatmap from "./heatmap/Heatmap";
@@ -14,7 +14,7 @@ import { withStyles } from "@material-ui/core/styles";
 const styles = theme => ({
   root: {
     display: "flex",
-    background: "#4da6ff",
+    background: "#4da6ff"
   }
 });
 
