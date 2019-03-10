@@ -24,6 +24,7 @@ import LocationsIcon from "@material-ui/icons/Place";
 import DarkModeIcon from "@material-ui/icons/SettingsBrightness";
 
 import * as Actions from "./drawer.actions";
+import { darkMode } from "../../constants/Constants";
 
 const drawerWidth = 240;
 
@@ -149,7 +150,10 @@ const MiniDrawer = ({
         <List>
           {icons.map(icon => {
             const Icon = icon.icon;
-            const text = (icon.text === "Dark Mode" && backgroundColor !== '#4da6ff') ? 'Light Mode' : icon.text;
+            const text =
+              icon.text === "Dark Mode" && backgroundColor !== darkMode
+                ? "Light Mode"
+                : icon.text;
             return (
               <ListItem
                 button
