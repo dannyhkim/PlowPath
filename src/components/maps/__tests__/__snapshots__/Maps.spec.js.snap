@@ -4,7 +4,15 @@ exports[`Maps renders 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Maps
+    center={
+      Object {
+        "lat": 43.7735,
+        "lng": -79.5019,
+      }
+    }
     classes={Object {}}
+    text="York University"
+    zoom={16.8}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -18,25 +26,105 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": "maps",
+      "bootstrapURLKeys": Object {
+        "key": undefined,
+      },
+      "children": <AnyReactComponent
+        lat={43.7735}
+        lng={-79.5019}
+        text="York University"
+      />,
+      "debounced": true,
+      "defaultCenter": Object {
+        "lat": 43.7735,
+        "lng": -79.5019,
+      },
+      "defaultZoom": 16.8,
+      "distanceToMouse": [Function],
+      "googleMapLoader": [Function],
+      "heatmap": Object {},
+      "heatmapLibrary": false,
+      "hoverDistance": 30,
+      "layerTypes": Array [],
+      "options": [Function],
+      "style": Object {
+        "height": "100%",
+        "margin": 0,
+        "padding": 0,
+        "position": "relative",
+        "width": "100%",
+      },
+      "yesIWantToUseGoogleMapApiInternals": false,
     },
     "ref": null,
-    "rendered": "maps",
-    "type": "div",
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "lat": 43.7735,
+        "lng": -79.5019,
+        "text": "York University",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
-        "children": "maps",
+        "bootstrapURLKeys": Object {
+          "key": undefined,
+        },
+        "children": <AnyReactComponent
+          lat={43.7735}
+          lng={-79.5019}
+          text="York University"
+        />,
+        "debounced": true,
+        "defaultCenter": Object {
+          "lat": 43.7735,
+          "lng": -79.5019,
+        },
+        "defaultZoom": 16.8,
+        "distanceToMouse": [Function],
+        "googleMapLoader": [Function],
+        "heatmap": Object {},
+        "heatmapLibrary": false,
+        "hoverDistance": 30,
+        "layerTypes": Array [],
+        "options": [Function],
+        "style": Object {
+          "height": "100%",
+          "margin": 0,
+          "padding": 0,
+          "position": "relative",
+          "width": "100%",
+        },
+        "yesIWantToUseGoogleMapApiInternals": false,
       },
       "ref": null,
-      "rendered": "maps",
-      "type": "div",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "lat": 43.7735,
+          "lng": -79.5019,
+          "text": "York University",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

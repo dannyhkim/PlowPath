@@ -23,12 +23,12 @@ const styles = theme => ({
     "&:nth-of_type(odd)": {
       backgroundColor: theme.palette.background.default
     }
-  },
+  }
 });
 
 const HeatmapCell = ({ classes }) => (
   <TableCell
-    className={classes.heatmap}
+    className={classes.heatMap}
     style={{ backgroundColor: heatmapColors[getRandomInt(heatmapColors.length)] }}
   />
 );
