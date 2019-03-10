@@ -3,7 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
   root: {
-    display: "flex"
+    display: "flex",
   },
   toolbar: {
     display: "flex",

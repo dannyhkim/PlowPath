@@ -15,6 +15,8 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
+import PlaceIcon from "@material-ui/icons/Place";
+import TerrainIcon from "@material-ui/icons/Terrain";
 
 const drawerWidth = 240;
 
@@ -111,7 +113,7 @@ function MiniDrawer({ open, setOpen, classes, theme }) {
           {["News", "Map", "Locations", "Dark Mode"].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
