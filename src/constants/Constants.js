@@ -80,6 +80,6 @@ export const streets = [
   }
 ];
 
-export const heatmapColors = ["#ef9a9a", "#fff59d", "#a5d6a7"];
+export const heatmapColors = ["#FFEDA4", "#FFAAAA", "#BBEBA9"];
 
 export const MAPS_API = process.env.REACT_APP_MAP_KEY;
