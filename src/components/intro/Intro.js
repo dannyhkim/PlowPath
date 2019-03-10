@@ -41,6 +41,7 @@ const styles = theme => ({
     fontWeight: "bold",
     fontFamily: "Avenir",
     paddingTop: "60px",
+    paddingBottom: "10px"
   },
   img: {
     width: "600px",
