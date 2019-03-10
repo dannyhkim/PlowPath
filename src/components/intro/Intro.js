@@ -36,7 +36,7 @@ const Intro = ({ classes }) => {
   return (
     <div className={classes.root}>
       <Typography className={classes.text1}>PlowPath</Typography>
-      <img className={classes.img} src={plowimage} alt="plow-image" />
+      <img className={classes.img} src={plowimage} alt="" />
       <Typography className={classes.text2}>
         Make sure there's a safe route for you.
       </Typography>
