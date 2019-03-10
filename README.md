@@ -18,4 +18,5 @@ You will need to install Node.js. See below for the download link.
 
 ### Built With
 * [ReactJS](https://reactjs.org/) - Frontend library
+* [Material-UI](https://material-ui.com/) - React components that implement Google's Material Design
 * [Node.js](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine
