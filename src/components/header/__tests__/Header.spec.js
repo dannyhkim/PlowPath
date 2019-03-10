@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 
 const defaultProps = {
   classes: {},
-  open: PropTypes.bool,
-  setOpen: PropTypes.func
+  open: false,
+  setOpen: jest.fn()
 };
 
 describe("Header", () => {

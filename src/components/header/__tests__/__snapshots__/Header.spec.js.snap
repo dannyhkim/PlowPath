@@ -5,8 +5,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <WithStyles(Header)
     classes={Object {}}
-    open={[Function]}
-    setOpen={[Function]}
+    open={false}
+    setOpen={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -35,8 +35,8 @@ ShallowWrapper {
         "root": "Header-root-1",
         "toolbar": "Header-toolbar-10",
       },
-      "open": [Function],
-      "setOpen": [Function],
+      "open": false,
+      "setOpen": [MockFunction],
     },
     "ref": null,
     "rendered": null,
@@ -61,8 +61,8 @@ ShallowWrapper {
           "root": "Header-root-1",
           "toolbar": "Header-toolbar-10",
         },
-        "open": [Function],
-        "setOpen": [Function],
+        "open": false,
+        "setOpen": [MockFunction],
       },
       "ref": null,
       "rendered": null,
