@@ -1,12 +1,8 @@
-import { createMuiTheme} from "@material-ui/core";;
+import { createMuiTheme } from "@material-ui/core";
 
-const theme = createMuiTheme({
+export const theme = createMuiTheme({
   typography: {
-
+    useNextVariants: true
   },
-  palette: {
-
-  }
+  palette: {}
 });
-
-export default theme
