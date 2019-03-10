@@ -33,7 +33,7 @@ const styles = theme => ({
 const Intro = ({ classes }) => {
   return (
     <div className={classes.root}>
-      <Typography classes={classes.text1}>PlowPath</Typography>
+      <Typography className={classes.text1}>PlowPath</Typography>
       <img className={classes.img} src={plowimage} alt="plow-image" />
       <Typography className={classes.text2}>
         Make sure there's a safe route for you.
