@@ -1,29 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
 import GoogleMapReact from "google-map-react";
+import { withStyles } from "@material-ui/core";
 import { MAPS_API } from "../../constants/Constants";
 
-const AnyReactComponent = ({ text }) => (
-  <div
-    style={{
-      color: "white",
-      background: "grey",
-      padding: "15px 10px",
-      display: "inline-flex",
-      textAlign: "center",
-      alignItems: "center",
-      justifyContent: "center",
-      borderRadius: "100%",
-      transform: "translate(-50%, -50%)"
-    }}
-  >
-    {text}
-  </div>
+const styles = theme => ({
+  root1: {
+    color: "white",
+    background: "grey",
+    padding: "15px 10px",
+    display: "inline-flex",
+    textAlign: "center",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: "100%",
+    transform: "translate(-50%, -50%)"
+  },
+  root2: {
+    height: "50vh",
+    width: "100%",
+    marginTop: "16px"
+  }
+});
+
+const AnyReactComponent = ({ text, classes }) => (
+  <div className={classes.root1}>{text}</div>
 );
 
-const Maps = ({ center, zoom, text }) => {
+const Maps = ({ center, zoom, text, classes }) => {
   return (
-    <div style={{ height: "50vh", width: "100%", marginTop: "16px" }}>
+    <div className={classes.root2}>
       <GoogleMapReact
         defaultCenter={center}
         defaultZoom={zoom}
@@ -31,7 +37,12 @@ const Maps = ({ center, zoom, text }) => {
           key: MAPS_API
         }}
       >
-        <AnyReactComponent lat={center.lat} lng={center.lng} text={text} />
+        <AnyReactComponent
+          lat={center.lat}
+          lng={center.lng}
+          text={text}
+          classes={classes}
+        />
       </GoogleMapReact>
     </div>
   );
@@ -40,7 +51,8 @@ const Maps = ({ center, zoom, text }) => {
 Maps.propTypes = {
   center: PropTypes.object,
   zoom: PropTypes.number,
-  text: PropTypes.string
+  text: PropTypes.string,
+  classes: PropTypes.object
 };
 
 Maps.defaultProps = {
@@ -49,4 +61,4 @@ Maps.defaultProps = {
   text: "York University"
 };
 
-export default Maps;
+export default withStyles(styles)(Maps);
