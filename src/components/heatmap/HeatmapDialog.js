@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
@@ -9,13 +9,8 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import withMobileDialog from "@material-ui/core/withMobileDialog";
 
 const ResponsiveDialog = ({ fullScreen, open, setOpen }) => {
-  const handleClickOpen = e => {
-    setOpen(true);
-  };
-
-  const handleClose = e => {
-    setOpen(false);
-  };
+  const handleClickOpen = e => setOpen(true);
+  const handleClose = e => setOpen(false);
 
   return (
     <div>
@@ -48,7 +43,9 @@ const ResponsiveDialog = ({ fullScreen, open, setOpen }) => {
 };
 
 ResponsiveDialog.propTypes = {
-  fullScreen: PropTypes.bool.isRequired
+  fullScreen: PropTypes.bool.isRequired,
+  open: PropTypes.bool,
+  setOpen: PropTypes.func
 };
 
 export default withMobileDialog()(ResponsiveDialog);
