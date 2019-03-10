@@ -1,24 +1,24 @@
 export const statuses = [
   {
-    id: 'wet',
-    name: 'Wet'
+    id: "wet",
+    name: "Wet"
   },
   {
-    id: 'slippery',
-    name: 'Slippery'
+    id: "slippery",
+    name: "Slippery"
   },
   {
-    id: 'icy',
-    name: 'Icy'
+    id: "icy",
+    name: "Icy"
   },
   {
-    id: 'dirty',
-    name: 'Dirty'
+    id: "dirty",
+    name: "Dirty"
   },
   {
-    id: 'blocked',
-    name: 'Blocked'
-  },
+    id: "blocked",
+    name: "Blocked"
+  }
 ];
 
 export const streets = [
@@ -44,10 +44,6 @@ export const streets = [
   }
 ];
 
-export const heatmapColors = [
-  "#ef9a9a",
-  "#fff59d",
-  "#a5d6a7"
-];
+export const heatmapColors = ["#ef9a9a", "#fff59d", "#a5d6a7"];
 
 export const MAPS_API = process.env.REACT_APP_MAP_KEY;

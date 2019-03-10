@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import Component from "../Header";
-import { shallow } from 'enzyme'
+import { shallow } from "enzyme";
 import PropTypes from "prop-types";
 
 const defaultProps = {
@@ -9,9 +9,9 @@ const defaultProps = {
   setOpen: PropTypes.func
 };
 
-describe('Header', () => {
-  it('renders', () => {
+describe("Header", () => {
+  it("renders", () => {
     const wrapper = shallow(<Component {...defaultProps} />);
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 });
