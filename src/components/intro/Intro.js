@@ -17,12 +17,14 @@ const styles = theme => ({
   text1: {
     color: theme.palette.common.white,
     display: "inline-flex",
-    fontSize: "100px"
+    fontSize: "100px",
+    fontFamily: "Avenir"
   },
   text2: {
     color: theme.palette.common.white,
     display: "inline-flex",
-    fontSize: "32px"
+    fontSize: "32px",
+    fontFamily: "Avenir"
   },
   img: {
     width: "600px",
