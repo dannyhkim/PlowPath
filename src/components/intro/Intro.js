@@ -35,6 +35,7 @@ const styles = theme => ({
   },
   legendtext: {
     color: theme.palette.common.white,
+    textAlign: "center",
     display: "block",
     fontSize: "25px",
     fontWeight: "bold",
@@ -48,26 +49,21 @@ const styles = theme => ({
   },
   legendimg: {
       width: "80px",
-      display: "inline-flex",
-      paddingTop: "20px",
-      paddingRight: "40px"
+      display: "inline",
+      alignItems: "center",
+      padding: "10px 20px"
   },
   legendsmall: {
       color: theme.palette.common.white,
       fontFamily: "Avenir",
       fontSize: "15px",
       fontWeight: "bold",
-      display: "inline",
-      paddingRight: "25px"
+      padding: "0",
+      display: "block"
   },
-  legendsmall2: {
-    color: theme.palette.common.white,
-    fontFamily: "Avenir",
-    fontSize: "15px",
-    fontWeight: "bold",
-    display: "inline",
-    paddingRight: "30px",
-    paddingLeft: "10px"
+  container: {
+    display: "inline-block",
+    padding: "0 10px"
   }
 });
 
@@ -83,19 +79,25 @@ const Intro = ({ classes }) => {
           Legend
       </Typography>
       <div className={classes.root}>
-      <img className={classes.legendimg} src={green} alt=""/>
-      <img className={classes.legendimg} src={yellow} alt=""/>
-      <img className={classes.legendimg} src={red} alt=""/>
+        <div className={classes.container}>
+        <img className={classes.legendimg} src={green} alt=""/>
+        <Typography className={classes.legendsmall}>
+          Clear
+        </Typography>
+        </div>
+        <div className={classes.container}>
+          <img className={classes.legendimg} src={yellow} alt=""/>
+          <Typography className={classes.legendsmall}>
+            Caution
+          </Typography>
+        </div>
+        <div className={classes.container}>
+          <img className={classes.legendimg} src={red} alt=""/>
+          <Typography className={classes.legendsmall}>
+            Dangerous
+          </Typography>
+        </div>
       </div>
-      <Typography className={classes.legendsmall2}>
-        Clear
-      </Typography>
-      <Typography className={classes.legendsmall}>
-        Caution
-      </Typography>
-      <Typography className={classes.legendsmall}>
-        Dangerous
-      </Typography>
     </div>
   );
 };
