@@ -7,18 +7,18 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
-import Button from '@material-ui/core/Button';
 
 const drawerWidth = 240;
 
 const styles = theme => ({
   root: {
     display: "flex",
-    flexGrow: 1,
+    flexGrow: 1
   },
   grow: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
@@ -37,7 +37,7 @@ const styles = theme => ({
   },
   menuButton: {
     marginLeft: 12,
-    marginRight: 36,
+    marginRight: 36
   },
   hide: {
     display: "none"
@@ -78,7 +78,7 @@ const styles = theme => ({
   }
 });
 
-function Header({ classes, open, setOpen }) {
+const Header = ({ classes, open, setOpen }) => {
   return (
     <AppBar
       position="fixed"
@@ -86,7 +86,7 @@ function Header({ classes, open, setOpen }) {
         [classes.appBarShift]: open
       })}
     >
-      <Toolbar disableGutters={!open} style={{ backgroundColor:'#4da6ff'}}>
+      <Toolbar disableGutters={!open} style={{ backgroundColor: "#4da6ff" }}>
         <IconButton
           color="inherit"
           aria-label="Open drawer"
@@ -97,7 +97,12 @@ function Header({ classes, open, setOpen }) {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" color="inherit" className={classes.grow} noWrap>
+        <Typography
+          variant="h6"
+          color="inherit"
+          className={classes.grow}
+          noWrap
+        >
           PlowPath
         </Typography>
         <Button color="inherit">HEAT MAP</Button>
@@ -108,7 +113,7 @@ function Header({ classes, open, setOpen }) {
 }
 
 Header.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object,
   open: PropTypes.bool,
   setOpen: PropTypes.func
 };

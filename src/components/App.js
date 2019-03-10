@@ -12,7 +12,8 @@ import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
   root: {
-    display: "flex"
+    display: "flex",
+    background: "#4da6ff",
   }
 });
 
