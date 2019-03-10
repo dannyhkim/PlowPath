@@ -28,12 +28,16 @@ const styles = theme => ({
 });
 
 const HeatmapCell = ({ classes, setOpen, open }) => {
+  const randomInt = getRandomInt(heatmapColors.length);
   return (
     <TableCell
-      className={classes.heatMap}
-      onClick={() => setOpen(!open)}
+      onClick={() => {
+        if (randomInt === 1) {
+          setOpen(!open);
+        }
+      }}
       style={{
-        backgroundColor: heatmapColors[getRandomInt(heatmapColors.length)]
+        backgroundColor: heatmapColors[randomInt]
       }}
     />
   );
