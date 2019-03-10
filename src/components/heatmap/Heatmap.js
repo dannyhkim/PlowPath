@@ -9,12 +9,13 @@ import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import { statuses, streets, heatmapColors } from "../../constants/Constants";
 import { getRandomInt } from "../utils/utils";
+import { black } from "ansi-colors";
 
 const styles = theme => ({
   root: {
     width: "100%",
     marginTop: theme.spacing.unit * 3,
-    overflowX: "auto"
+    overflowX: "auto",
   },
   table: {
     minWidth: 700

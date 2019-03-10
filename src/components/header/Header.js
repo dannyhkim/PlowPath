@@ -97,20 +97,15 @@ const Header = ({ classes, open, setOpen }) => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography
-          variant="h6"
-          color="inherit"
-          className={classes.grow}
-          noWrap
-        >
+        <Typography variant="h6" color="inherit" className={classes.grow} noWrap>
           PlowPath
         </Typography>
         <Button color="inherit">HEAT MAP</Button>
         <Button color="inherit">YORK U MAP</Button>
-      </Toolbar>
-    </AppBar>
+        </Toolbar>
+      </AppBar>
   );
-};
+}
 
 Header.propTypes = {
   classes: PropTypes.object,
