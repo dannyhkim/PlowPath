@@ -30,7 +30,7 @@ const drawerWidth = 240;
 
 const icons = [
   {
-    id: "location",
+    id: "news",
     text: "News",
     icon: NewsIcon
   },
