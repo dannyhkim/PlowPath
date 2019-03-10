@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 import classNames from "classnames";
 
 import AppBar from "@material-ui/core/AppBar";
@@ -102,8 +102,8 @@ function Header({ classes, open, setOpen }) {
         </Typography>
         <Button color="inherit">HEAT MAP</Button>
         <Button color="inherit">YORK U MAP</Button>
-      <Toolbar/>
-    <AppBar/>
+        </Toolbar>
+      </AppBar>
   );
 }
 
