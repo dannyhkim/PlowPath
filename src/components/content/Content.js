@@ -15,8 +15,8 @@ const styles = theme => ({
   content: {
     flexGrow: 1,
     padding: theme.spacing.unit * 3,
-    marginLeft: '15%',
-    marginRight: '15%'
+    marginLeft: '20%',
+    marginRight: '20%'
   }
 });
 
