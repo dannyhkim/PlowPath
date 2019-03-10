@@ -39,12 +39,12 @@ const icons = [
     icon: MapIcon
   },
   {
-    id: "map2",
+    id: "location",
     text: "Location",
     icon: LocationsIcon
   },
   {
-    id: "map3",
+    id: "dark",
     text: "Dark Mode",
     icon: DarkModeIcon
   }
@@ -149,6 +149,7 @@ const MiniDrawer = ({
         <List>
           {icons.map(icon => {
             const Icon = icon.icon;
+            const text = (icon.text === "Dark Mode" && backgroundColor === '#4da6ff') ? 'Light Mode' : icon.text;
             return (
               <ListItem
                 button
@@ -158,7 +159,7 @@ const MiniDrawer = ({
                 <ListItemIcon>
                   <Icon />
                 </ListItemIcon>
-                <ListItemText primary={icon.text} />
+                <ListItemText primary={text} />
               </ListItem>
             );
           })}
