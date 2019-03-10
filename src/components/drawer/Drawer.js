@@ -25,8 +25,8 @@ const drawerWidth = 240;
 const icons = [
   {
     id: "location",
-    text: "Location",
-    icon: LocationsIcon
+    text: "News",
+    icon: NewsIcon
   },
   {
     id: "map",
@@ -35,18 +35,13 @@ const icons = [
   },
   {
     id: "map2",
-    text: "Map",
-    icon: MapIcon
+    text: "Location",
+    icon: LocationsIcon
   },
   {
     id: "map3",
-    text: "Map",
-    icon: MapIcon
-  },
-  {
-    id: "map4",
-    text: "Map",
-    icon: MapIcon
+    text: "Dark Mode",
+    icon: DarkModeIcon
   }
 ];
 
