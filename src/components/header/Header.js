@@ -1,5 +1,5 @@
 import React from "react";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 import classNames from "classnames";
 
 import AppBar from "@material-ui/core/AppBar";
@@ -97,12 +97,7 @@ const Header = ({ classes, open, setOpen }) => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography
-          variant="h6"
-          color="inherit"
-          className={classes.grow}
-          noWrap
-        >
+        <Typography variant="h6" color="inherit" className={classes.grow} noWrap>
           PlowPath
         </Typography>
         <Button color="inherit">HEAT MAP</Button>
