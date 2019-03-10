@@ -149,7 +149,7 @@ const MiniDrawer = ({
         <List>
           {icons.map(icon => {
             const Icon = icon.icon;
-            const text = (icon.text === "Dark Mode" && backgroundColor === '#4da6ff') ? 'Light Mode' : icon.text;
+            const text = (icon.text === "Dark Mode" && backgroundColor !== '#4da6ff') ? 'Light Mode' : icon.text;
             return (
               <ListItem
                 button
