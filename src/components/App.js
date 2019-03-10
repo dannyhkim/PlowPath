@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import "./App.css";
-import { Intro } from "./intro/Intro";
+import Intro from "./intro/Intro";
 import Header from "./header/Header";
 import Drawer from "./drawer/Drawer";
 import Heatmap from "./heatmap/Heatmap";
@@ -18,7 +17,7 @@ const styles = theme => ({
   }
 });
 
-export function App({ classes }) {
+const App = ({ classes }) => {
   const [open, setOpen] = useState(false);
   return (
     <div className={classes.root}>
@@ -31,7 +30,7 @@ export function App({ classes }) {
       </Content>
     </div>
   );
-}
+};
 
 App.propTypes = {
   classes: PropTypes.object

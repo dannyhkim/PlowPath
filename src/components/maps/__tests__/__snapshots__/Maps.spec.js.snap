@@ -31,7 +31,7 @@ ShallowWrapper {
       "children": <GoogleMap
         bootstrapURLKeys={
           Object {
-            "key": undefined,
+            "key": "AIzaSyCSADzU27ECqdVyrlvpVf2jsV5OaZMYr78",
           }
         }
         debounced={true}
@@ -79,7 +79,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "bootstrapURLKeys": Object {
-          "key": undefined,
+          "key": "AIzaSyCSADzU27ECqdVyrlvpVf2jsV5OaZMYr78",
         },
         "children": <AnyReactComponent
           lat={43.7735}
@@ -135,7 +135,7 @@ ShallowWrapper {
         "children": <GoogleMap
           bootstrapURLKeys={
             Object {
-              "key": undefined,
+              "key": "AIzaSyCSADzU27ECqdVyrlvpVf2jsV5OaZMYr78",
             }
           }
           debounced={true}
@@ -183,7 +183,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bootstrapURLKeys": Object {
-            "key": undefined,
+            "key": "AIzaSyCSADzU27ECqdVyrlvpVf2jsV5OaZMYr78",
           },
           "children": <AnyReactComponent
             lat={43.7735}
