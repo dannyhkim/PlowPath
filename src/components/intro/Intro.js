@@ -4,7 +4,6 @@ import plowimage from "./plowimage.png";
 
 import { Typography } from "@material-ui/core";
 import { withStyles } from "@material-ui/core";
-import { RSA_NO_PADDING } from "constants";
 
 const styles = theme => ({
   root: {

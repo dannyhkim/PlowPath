@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
 import Intro from "./intro/Intro";
@@ -17,10 +18,10 @@ const styles = theme => ({
   }
 });
 
-const App = ({ classes }) => {
+const App = ({ classes, backgroundColor }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={classes.root}>
+    <div className={classes.root} style={{ backgroundColor: backgroundColor}}>
       <Header open={open} setOpen={setOpen} />
       <Drawer open={open} setOpen={setOpen} />
       <Content>
@@ -32,8 +33,15 @@ const App = ({ classes }) => {
   );
 };
 
-App.propTypes = {
-  classes: PropTypes.object
+const mapStateToProps = ({ drawer }) => {
+  return {
+    backgroundColor: drawer.backgroundColor
+  };
 };
 
-export default withStyles(styles)(App);
+App.propTypes = {
+  classes: PropTypes.object,
+  backgroundColor: PropTypes.string
+};
+
+export default withStyles(styles)(connect(mapStateToProps)(App));

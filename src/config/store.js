@@ -1,8 +1,6 @@
 import { applyMiddleware, compose, createStore } from "redux";
 import reducers from "./reducers";
 import thunk from "redux-thunk";
-
-// https://github.com/LogRocket/redux-logger#readme
 import logger from "redux-logger";
 
 const composeEnhancers =

@@ -1,4 +1,7 @@
 import React from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
@@ -19,6 +22,8 @@ import NewsIcon from "@material-ui/icons/LibraryBooks";
 import MapIcon from "@material-ui/icons/Map";
 import LocationsIcon from "@material-ui/icons/Place";
 import DarkModeIcon from "@material-ui/icons/SettingsBrightness";
+
+import * as Actions from "./drawer.actions";
 
 const drawerWidth = 240;
 
@@ -104,7 +109,14 @@ const styles = theme => ({
   }
 });
 
-function MiniDrawer({ open, setOpen, classes, theme }) {
+const MiniDrawer = ({
+  open,
+  setOpen,
+  classes,
+  theme,
+  toggleBackgroundColor,
+  backgroundColor
+}) => {
   const handleDrawerClose = e => setOpen(false);
 
   return (
@@ -138,7 +150,11 @@ function MiniDrawer({ open, setOpen, classes, theme }) {
           {icons.map(icon => {
             const Icon = icon.icon;
             return (
-              <ListItem button key={icon.id}>
+              <ListItem
+                button
+                key={icon.id}
+                onClick={e => toggleBackgroundColor(backgroundColor)}
+              >
                 <ListItemIcon>
                   <Icon />
                 </ListItemIcon>
@@ -161,11 +177,33 @@ function MiniDrawer({ open, setOpen, classes, theme }) {
       </Drawer>
     </div>
   );
-}
+};
+
+const mapStateToProps = ({ drawer }) => {
+  return {
+    backgroundColor: drawer.backgroundColor
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators(
+    {
+      toggleBackgroundColor: Actions.togglebackgroundColor
+    },
+    dispatch
+  );
+};
 
 MiniDrawer.propTypes = {
   classes: PropTypes.object.isRequired,
-  theme: PropTypes.object.isRequired
+  theme: PropTypes.object.isRequired,
+  backgroundColor: PropTypes.string,
+  togglebackgroundColor: PropTypes.func
 };
 
-export default withStyles(styles, { withTheme: true })(MiniDrawer);
+export default withStyles(styles, { withTheme: true })(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(MiniDrawer)
+);

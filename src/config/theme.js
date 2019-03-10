@@ -4,5 +4,6 @@ export const theme = createMuiTheme({
   typography: {
     useNextVariants: true
   },
-  palette: {}
+  palette: {
+  }
 });

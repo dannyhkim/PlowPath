@@ -3,7 +3,7 @@
 exports[`Header renders 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WithStyles(Header)
+  Symbol(enzyme.__unrendered__): <WithStyles(Connect(Header))
     classes={Object {}}
     open={false}
     setOpen={[MockFunction]}
@@ -20,20 +20,20 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
       "classes": Object {
-        "appBar": "Header-appBar-3",
-        "appBarShift": "Header-appBarShift-4",
-        "content": "Header-content-11",
-        "drawer": "Header-drawer-7",
-        "drawerClose": "Header-drawerClose-9",
-        "drawerOpen": "Header-drawerOpen-8",
-        "grow": "Header-grow-2",
-        "hide": "Header-hide-6",
-        "menuButton": "Header-menuButton-5",
-        "root": "Header-root-1",
-        "toolbar": "Header-toolbar-10",
+        "appBar": "Connect-Header--appBar-3",
+        "appBarShift": "Connect-Header--appBarShift-4",
+        "content": "Connect-Header--content-11",
+        "drawer": "Connect-Header--drawer-7",
+        "drawerClose": "Connect-Header--drawerClose-9",
+        "drawerOpen": "Connect-Header--drawerOpen-8",
+        "grow": "Connect-Header--grow-2",
+        "hide": "Connect-Header--hide-6",
+        "menuButton": "Connect-Header--menuButton-5",
+        "root": "Connect-Header--root-1",
+        "toolbar": "Connect-Header--toolbar-10",
       },
       "open": false,
       "setOpen": [MockFunction],
@@ -46,20 +46,20 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
         "classes": Object {
-          "appBar": "Header-appBar-3",
-          "appBarShift": "Header-appBarShift-4",
-          "content": "Header-content-11",
-          "drawer": "Header-drawer-7",
-          "drawerClose": "Header-drawerClose-9",
-          "drawerOpen": "Header-drawerOpen-8",
-          "grow": "Header-grow-2",
-          "hide": "Header-hide-6",
-          "menuButton": "Header-menuButton-5",
-          "root": "Header-root-1",
-          "toolbar": "Header-toolbar-10",
+          "appBar": "Connect-Header--appBar-3",
+          "appBarShift": "Connect-Header--appBarShift-4",
+          "content": "Connect-Header--content-11",
+          "drawer": "Connect-Header--drawer-7",
+          "drawerClose": "Connect-Header--drawerClose-9",
+          "drawerOpen": "Connect-Header--drawerOpen-8",
+          "grow": "Connect-Header--grow-2",
+          "hide": "Connect-Header--hide-6",
+          "menuButton": "Connect-Header--menuButton-5",
+          "root": "Connect-Header--root-1",
+          "toolbar": "Connect-Header--toolbar-10",
         },
         "open": false,
         "setOpen": [MockFunction],

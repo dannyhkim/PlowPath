@@ -3,7 +3,7 @@
 exports[`Drawer renders 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WithStyles(MiniDrawer)
+  Symbol(enzyme.__unrendered__): <WithStyles(Connect(MiniDrawer))
     classes={Object {}}
     theme={Object {}}
   />,
@@ -19,18 +19,18 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
       "classes": Object {
-        "appBar": "MiniDrawer-appBar-1",
-        "appBarShift": "MiniDrawer-appBarShift-2",
-        "content": "MiniDrawer-content-9",
-        "drawer": "MiniDrawer-drawer-5",
-        "drawerClose": "MiniDrawer-drawerClose-7",
-        "drawerOpen": "MiniDrawer-drawerOpen-6",
-        "hide": "MiniDrawer-hide-4",
-        "menuButton": "MiniDrawer-menuButton-3",
-        "toolbar": "MiniDrawer-toolbar-8",
+        "appBar": "Connect-MiniDrawer--appBar-1",
+        "appBarShift": "Connect-MiniDrawer--appBarShift-2",
+        "content": "Connect-MiniDrawer--content-9",
+        "drawer": "Connect-MiniDrawer--drawer-5",
+        "drawerClose": "Connect-MiniDrawer--drawerClose-7",
+        "drawerOpen": "Connect-MiniDrawer--drawerOpen-6",
+        "hide": "Connect-MiniDrawer--hide-4",
+        "menuButton": "Connect-MiniDrawer--menuButton-3",
+        "toolbar": "Connect-MiniDrawer--toolbar-8",
       },
       "theme": Object {},
     },
@@ -42,18 +42,18 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
         "classes": Object {
-          "appBar": "MiniDrawer-appBar-1",
-          "appBarShift": "MiniDrawer-appBarShift-2",
-          "content": "MiniDrawer-content-9",
-          "drawer": "MiniDrawer-drawer-5",
-          "drawerClose": "MiniDrawer-drawerClose-7",
-          "drawerOpen": "MiniDrawer-drawerOpen-6",
-          "hide": "MiniDrawer-hide-4",
-          "menuButton": "MiniDrawer-menuButton-3",
-          "toolbar": "MiniDrawer-toolbar-8",
+          "appBar": "Connect-MiniDrawer--appBar-1",
+          "appBarShift": "Connect-MiniDrawer--appBarShift-2",
+          "content": "Connect-MiniDrawer--content-9",
+          "drawer": "Connect-MiniDrawer--drawer-5",
+          "drawerClose": "Connect-MiniDrawer--drawerClose-7",
+          "drawerOpen": "Connect-MiniDrawer--drawerOpen-6",
+          "hide": "Connect-MiniDrawer--hide-4",
+          "menuButton": "Connect-MiniDrawer--menuButton-3",
+          "toolbar": "Connect-MiniDrawer--toolbar-8",
         },
         "theme": Object {},
       },

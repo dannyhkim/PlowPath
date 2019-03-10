@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
@@ -27,6 +28,11 @@ const Content = ({ classes, children }) => {
       {children}
     </main>
   );
+};
+
+Content.propTypes = {
+  classes: PropTypes.object,
+  children: PropTypes.node
 };
 
 export default withStyles(styles)(Content);

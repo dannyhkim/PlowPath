@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
@@ -78,7 +79,7 @@ const styles = theme => ({
   }
 });
 
-const Header = ({ classes, open, setOpen }) => {
+const Header = ({ classes, open, setOpen, backgroundColor }) => {
   return (
     <AppBar
       position="fixed"
@@ -86,7 +87,7 @@ const Header = ({ classes, open, setOpen }) => {
         [classes.appBarShift]: open
       })}
     >
-      <Toolbar disableGutters={!open} style={{ backgroundColor: "#4da6ff" }}>
+      <Toolbar disableGutters={!open} style={{ backgroundColor: backgroundColor }}>
         <IconButton
           color="inherit"
           aria-label="Open drawer"
@@ -112,10 +113,17 @@ const Header = ({ classes, open, setOpen }) => {
   );
 };
 
+const mapStateToProps = ({ drawer }) => {
+  return {
+    backgroundColor: drawer.backgroundColor
+  };
+};
+
 Header.propTypes = {
   classes: PropTypes.object,
   open: PropTypes.bool,
-  setOpen: PropTypes.func
+  setOpen: PropTypes.func,
+  backgroundColor: PropTypes.string
 };
 
-export default withStyles(styles)(Header);
+export default withStyles(styles)(connect(mapStateToProps)(Header));

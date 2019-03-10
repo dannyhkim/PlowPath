@@ -5,7 +5,7 @@ import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 
 import { Provider } from "react-redux";
-import store from "config/store";
+import store from "./config/store";
 
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import { theme } from "./config/theme";
