@@ -93,7 +93,7 @@ function Header({ classes, open, setOpen }) {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" color="inherit" noWrap>
-          HeatMap
+          PlowPath
         </Typography>
       </Toolbar>
     </AppBar>
