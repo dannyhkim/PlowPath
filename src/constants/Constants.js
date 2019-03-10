@@ -1,7 +1,7 @@
 export const statuses = [
   {
-    id: "status",
-    name: "Status"
+    id: "wet",
+    name: "Wet"
   },
   {
     id: "slippery",
