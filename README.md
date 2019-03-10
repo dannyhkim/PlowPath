@@ -1,5 +1,5 @@
 ## Hack Lassonde 2019
-A web application using Google Cloud's Map api.
+A web application using Google Cloud's Map API, following Material Design through the Material-UI framework.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and/or testing purposes.
