@@ -11,8 +11,6 @@ const composeEnhancers =
 let middleware = [thunk];
 if (process.env.NODE_ENV === "development") {
   middleware = [...middleware, logger];
-} else {
-  middleware = [...middleware];
 }
 
 const enhancer = composeEnhancers(applyMiddleware(...middleware));
