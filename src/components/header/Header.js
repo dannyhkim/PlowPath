@@ -98,12 +98,12 @@ function Header({ classes, open, setOpen }) {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" color="inherit" className={classes.grow} noWrap>
-          HeatMap
+          PlowPath
         </Typography>
         <Button color="inherit">HEAT MAP</Button>
         <Button color="inherit">YORK U MAP</Button>
-      </Toolbar>
-    </AppBar>
+      <Toolbar/>
+    <AppBar/>
   );
 }
 
