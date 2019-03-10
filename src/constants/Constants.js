@@ -45,6 +45,38 @@ export const streets = [
   {
     id: "arboreteum-lane",
     name: "Arboreteum Lane"
+  },
+  {
+    id: "the-pond-rd",
+    name: "The Pond Road"
+  },
+  {
+    id: "york-blvd",
+    name: "York Boulevard"
+  },
+  {
+    id: "sentinel-rd",
+    name: "Sentinel Road"
+  },
+  {
+    id: "vanier-ln",
+    name: "Vanier Lane"
+  },
+  {
+    id: "observatory-rd",
+    name: "Observatory Road"
+  },
+  {
+    id: "winters-ln",
+    name: "Winters Lane"
+  },
+  {
+    id: "ian-macdonald-blvd",
+    name: "Ian MacDonald Boulevard"
+  },
+  {
+    id: "ottawa-road",
+    name: "Ottawa Road"
   }
 ];
 
