@@ -21,10 +21,10 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "classes": Object {
+        "container": "Intro-container-8",
         "img": "Intro-img-5",
         "legendimg": "Intro-legendimg-6",
         "legendsmall": "Intro-legendsmall-7",
-        "legendsmall2": "Intro-legendsmall2-8",
         "legendtext": "Intro-legendtext-4",
         "root": "Intro-root-1",
         "text1": "Intro-text1-2",
@@ -42,10 +42,10 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "classes": Object {
+          "container": "Intro-container-8",
           "img": "Intro-img-5",
           "legendimg": "Intro-legendimg-6",
           "legendsmall": "Intro-legendsmall-7",
-          "legendsmall2": "Intro-legendsmall2-8",
           "legendtext": "Intro-legendtext-4",
           "root": "Intro-root-1",
           "text1": "Intro-text1-2",
