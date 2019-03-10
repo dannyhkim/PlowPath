@@ -23,15 +23,17 @@ const AnyReactComponent = ({ text }) => (
 
 const Maps = ({ center, zoom, text }) => {
   return (
-    <GoogleMapReact
-      defaultCenter={center}
-      defaultZoom={zoom}
-      bootstrapURLKeys={{
-        key: MAPS_API
-      }}
-    >
-      <AnyReactComponent lat={center.lat} lng={center.lng} text={text} />
-    </GoogleMapReact>
+    <div style={{ height: "50vh", width: "100%", marginTop: "16px" }}>
+      <GoogleMapReact
+        defaultCenter={center}
+        defaultZoom={zoom}
+        bootstrapURLKeys={{
+          key: MAPS_API
+        }}
+      >
+        <AnyReactComponent lat={center.lat} lng={center.lng} text={text} />
+      </GoogleMapReact>
+    </div>
   );
 };
 

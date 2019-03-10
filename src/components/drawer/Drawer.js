@@ -24,14 +24,31 @@ const drawerWidth = 240;
 
 const icons = [
   {
-    id: 'Map',
+    id: "location",
+    text: "Location",
     icon: LocationsIcon
   },
   {
-    id: 'Map',
-    icon: LocationsIcon
+    id: "map",
+    text: "Map",
+    icon: MapIcon
+  },
+  {
+    id: "map2",
+    text: "Map",
+    icon: MapIcon
+  },
+  {
+    id: "map3",
+    text: "Map",
+    icon: MapIcon
+  },
+  {
+    id: "map4",
+    text: "Map",
+    icon: MapIcon
   }
-]
+];
 
 const styles = theme => ({
   appBar: {
@@ -121,28 +138,21 @@ function MiniDrawer({ open, setOpen, classes, theme }) {
             )}
           </IconButton>
         </div>
-        <Divider/>
+        <Divider />
         <List>
-          {["News"].map((text, index) => (
-            <ListItem button key={text}>
-            <ListItemIcon>
-            {index === 0 ? <NewsIcon/>: <NewsIcon/>}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-          ))}
+          {icons.map(icon => {
+            const Icon = icon.icon;
+            return (
+              <ListItem button key={icon.id}>
+                <ListItemIcon>
+                  <Icon />
+                </ListItemIcon>
+                <ListItemText primary={icon.text} />
+              </ListItem>
+            );
+          })}
         </List>
-        <List>
-          {["News", "Map", "Location", "Dark Mode"].map((text, index) => (
-            <ListItem button key={text}>
-            <ListItemIcon>
-            {}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-          ))}
-        </List>
-        <Divider/>
+        <Divider />
         <List>
           {["User", "Settings", "Spam"].map((text, index) => (
             <ListItem button key={text}>
