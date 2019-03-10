@@ -10,7 +10,7 @@ You will need to install Node.js. See below for the download link.
 ### Installing
 1. Run ```$ git clone https://github.com/hack-lassonde-2019/heatmap.git``` on the cli, or download the source code to a local directory of your choice.
 2. Run ```$ yarn``` within the root folder to install all the necessary libraries.
-3. Create an ```.env``` file and add ```REACT_APP_REACT_APP_MAP_KEY={INSERT YOUR GOOGLE MAP API KEY HERE}``` 
+3. Create an ```.env``` file in the root of the project and add ```REACT_APP_REACT_APP_MAP_KEY={INSERT YOUR GOOGLE MAP API KEY HERE}``` inside it 
 
 ### Running
 1. Run ```$ yarn start``` on the cli within the root of the project folder.
