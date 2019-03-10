@@ -8,7 +8,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import { statuses, streets, heatmapColors } from "../../constants/Constants";
-import { getRandomInt } from "../utils/utils";
+import { getRandomInt } from "../../utils/utils";
 import HeatmapDialog from "./HeatmapDialog";
 
 const styles = theme => ({
