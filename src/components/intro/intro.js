@@ -1,6 +1,8 @@
 import React from "react";
-import plowimage from './images/plowimage.png';
+import plowimage from './plowimage.png';
 
-function Header() {
+function Intro() {
     return <img src={plowimage}></img>
 }
+
+export default Intro;

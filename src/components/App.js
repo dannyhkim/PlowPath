@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from 'prop-types';
 
 import "./App.css";
+import Intro from "./intro/Intro"
 import Header from "./header/Header";
 import Drawer from "./drawer/Drawer";
 import Heatmap from "./heatmap/Heatmap";
@@ -24,6 +25,7 @@ export function App({ classes }) {
       <Header open={open} setOpen={setOpen} />
       <Drawer open={open} setOpen={setOpen} />
       <Content>
+        <Intro open={open} setOpen={setOpen} />
         <Heatmap open={open} setOpen={setOpen} />
         <Maps open={open} setOpen={setOpen} />
       </Content>

@@ -9,13 +9,14 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
+import { createMuiTheme } from '@material-ui/core/styles';
 
 const drawerWidth = 240;
 
 const styles = theme => ({
   root: {
     display: "flex",
-    flexGrow: 1
+    flexGrow: 1,
   },
   grow: {
     flexGrow: 1
@@ -86,7 +87,7 @@ const Header = ({ classes, open, setOpen }) => {
         [classes.appBarShift]: open
       })}
     >
-      <Toolbar disableGutters={!open} style={{ backgroundColor: "#4da6ff" }}>
+      <Toolbar disableGutters={!open} style={{ backgroundColor: "#4da6ff"}}>
         <IconButton
           color="inherit"
           aria-label="Open drawer"
