@@ -41,6 +41,10 @@ export const streets = [
   {
     id: "behavioral-science",
     name: "Behavioral Science"
+  },
+  {
+    id: "arboreteum-lane",
+    name: "Arboreteum Lane"
   }
 ];
 
