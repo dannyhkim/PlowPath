@@ -3,7 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
   root: {
-    display: "flex",
+    display: "flex"
   },
   toolbar: {
     display: "flex",
@@ -14,18 +14,18 @@ const styles = theme => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing.unit * 3
+    padding: theme.spacing.unit * 3,
+    marginLeft: '15%',
+    marginRight: '15%'
   }
 });
 
 function Content({ classes, children }) {
   return (
-    <div className={classes.root}>
-      <main className={classes.content}>
-        <div className={classes.toolbar} />
-        {children}
-      </main>
-    </div>
+    <main className={classes.content}>
+      <div className={classes.toolbar} />
+      {children}
+    </main>
   );
 }
 
