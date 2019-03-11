@@ -1,8 +1,8 @@
 import * as Actions from './drawer.actions';
-import { lightMode } from '../../constants/Constants'
+import { darkMode } from '../../constants/Constants'
 
 const initialState = {
-  backgroundColor: lightMode
+  backgroundColor: darkMode
 };
 
 const reducer = function (state = initialState, action) {
